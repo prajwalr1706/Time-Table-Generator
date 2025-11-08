@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 0 0% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 11%;
+
+    --primary: 206 47% 31%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 20% 93%;
+    --secondary-foreground: 206 47% 31%;
+
+    --muted: 210 20% 93%;
+    --muted-foreground: 206 10% 45%;
+
+    --accent: 178 59% 54%;
+    --accent-foreground: 0 0% 11%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 88%;
+    --input: 210 20% 88%;
+    --ring: 178 59% 54%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 206 47% 31%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 178 59% 54%;
+    --sidebar-primary-foreground: 0 0% 11%;
+    --sidebar-accent: 206 47% 25%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 206 47% 25%;
+    --sidebar-ring: 178 59% 54%;
+  }
+
+  .dark {
+    --background: 206 47% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 206 47% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 206 47% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 178 59% 54%;
+    --primary-foreground: 0 0% 11%;
+
+    --secondary: 206 47% 18%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 206 47% 18%;
+    --muted-foreground: 206 20% 70%;
+
+    --accent: 178 59% 54%;
+    --accent-foreground: 0 0% 11%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 206 47% 18%;
+    --input: 206 47% 18%;
+    --ring: 178 59% 54%;
+
+    --sidebar-background: 206 47% 12%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 178 59% 54%;
+    --sidebar-primary-foreground: 0 0% 11%;
+    --sidebar-accent: 206 47% 18%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 206 47% 18%;
+    --sidebar-ring: 178 59% 54%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+}
